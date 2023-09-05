@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(232, 230, 230);
+}
+
+#title-div,
+#input-div {
+    text-align: center;
+}
+
+.list-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration: line-through;
+}
