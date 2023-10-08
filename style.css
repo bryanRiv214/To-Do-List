@@ -1,14 +1,48 @@
 body {
-    background-color: rgb(232, 230, 230);
+    background-color: #D8C3A5;
 }
 
 #title-div,
-#input-div {
+#input-div,
+#incomplete-header-div,
+#completed-header-div {
     text-align: center;
 }
 
-.list-item:hover {
-    opacity: 0.5;
+#title-div{
+    margin-top: 2vh;
+}
+
+#input-div{
+    margin-bottom: 2vh;
+}
+
+#input-text, #input-text-button{
+    border-radius: .5vw;
+}
+
+#to-do-list{
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
+    z-index: -1;
+}
+
+.checkbox-class:hover {
     cursor: pointer;
-    text-decoration: line-through;
+    background-color: rgba(12,111,253,.8);
+    /* text-decoration: line-through; */
+}
+
+.trash-icon{
+    height: 2.2vh;
+    z-index: 2;
+}
+
+.trash-icon:hover{
+    cursor: pointer;
+    background-color: rgb(212, 82, 82, .5);
+}
+
+#completed-header-div{
+    margin-top: 5vh;
 }
