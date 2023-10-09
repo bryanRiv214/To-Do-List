@@ -73,6 +73,12 @@ body {
 
   }
 
+.checkbox-class {
+    cursor: pointer;
+    background-color: rgb(229, 226, 226);
+    /* text-decoration: line-through; */
+}
+
 .checkbox-class:hover {
     cursor: pointer;
     background-color: rgba(138, 163, 194, 0.8);
@@ -94,8 +100,13 @@ body {
     margin-top: 5vh;
 }
 
+
 #completed-list label {
     text-decoration: line-through;
+}
+
+#completed-list li {
+    opacity: .5;
 }
 
 #completed-list span {
