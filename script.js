@@ -44,7 +44,7 @@ textButton.onclick = function (event) {
 
     //adding label
     let newLabel = document.createElement("label");
-    newLabel.className = "form-check-label";
+    newLabel.className = "form-check-label fs-6";
     newLabel.htmlFor = taskCountText;
     newLabel.innerHTML = textInput.value;
     newTask.appendChild(newLabel);
@@ -53,7 +53,7 @@ textButton.onclick = function (event) {
     if (dateInput.value) {
       console.log(dateInput.value);
       let dateText = document.createElement("span");
-      dateText.className = "date-text";
+      dateText.className = "date-text fs-6";
       dateText.innerHTML = " | Due: " + dateInput.value;
       newTask.appendChild(dateText);
     }
