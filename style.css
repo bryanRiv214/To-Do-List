@@ -17,8 +17,41 @@ body {
     margin-bottom: 2vh;
 }
 
+#incomplete-header-div{
+    margin-top:5vh;
+}
+/* 
+#form-container{
+    width:40vw;
+} */
+
 #input-text, #input-text-button{
     border-radius: .5vw;
+}
+
+#input-text-button:hover{
+    background-color: rgba(196, 190, 190, 0.687);
+}
+
+#second-input-div{
+    margin-top:0.5vh;
+    margin-bottom:0.5vh;
+}
+
+#input-menu,
+#input-date{
+    width:8vw;
+}
+#high-option{
+    color:red;
+}
+
+#med-option{
+    color:blue;
+}
+
+#low-option{
+    color:green;
 }
 
 #to-do-list{
@@ -27,15 +60,29 @@ body {
     z-index: -1;
 }
 
+.dot {
+    height: 1.5vh;
+    width: 1.5vh;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    /* margin-bottom:0px;
+    margin-top:0px; */
+    margin-right: .5vw;
+    margin-left: .5vw;
+
+  }
+
 .checkbox-class:hover {
     cursor: pointer;
-    background-color: rgba(12,111,253,.8);
+    background-color: rgba(138, 163, 194, 0.8);
     /* text-decoration: line-through; */
 }
 
+
 .trash-icon{
-    height: 2.2vh;
-    z-index: 2;
+    height: 3vh;
+    /* z-index: 2; */
 }
 
 .trash-icon:hover{
@@ -45,4 +92,12 @@ body {
 
 #completed-header-div{
     margin-top: 5vh;
+}
+
+#completed-list label {
+    text-decoration: line-through;
+}
+
+#completed-list span {
+    text-decoration: line-through;
 }

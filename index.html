@@ -19,39 +19,49 @@
       <h1 class="fs-1">To-Do List</h1>
     </div>
 
-    <div id="input-div">
-      <form>
-        <input type="text" id="input-text" placeholder="Please enter a task" />
-        <button id="input-text-button">Add to list</button>
+    <div id="input-div ">
+      <form id="form-container" class="container text-center justify-content-center">
+        <div class="row align-items-center d-flex flex-row">
+          <div class="col">
+            <input
+              type="text"
+              id="input-text"
+              class="align-self-start"
+              placeholder="Please enter a task"
+            />
+          </div>
+        </div>
+        <div class="row align-items-center d-flex justify-content-center" id="second-input-div">
+          <div class="col-6 row-sm-2">
+            <input type="date" id="input-date" class="align-self-start" />
+          </div>
+          <div class="col-6 row-sm-2">
+            <select id="input-menu">
+                <option value="">Priority:</option>
+                <option id="high-option" value="high">High</option>
+                <option id="med-option" value="med">Medium</option>
+                <option id="low-option" value="low">Low</option>
+              </select>
+          </div>
+        </div>
+        <div>
+            <button id="input-text-button">Add to list</button>
+          </div>
       </form>
     </div>
     <div id="incomplete-header-div">
-        <h1 class="fs-2">Incomplete Tasks</h1>
+      <h1 class="fs-2">Incomplete Tasks</h1>
     </div>
     <div id="to-do-container">
       <ul id="to-do-list" class="list-group">
-        <li class="list-item list-group-item container">
-          <input
-            class="form-check-input me-1 checkbox-class"
-            type="checkbox"
-            value=""
-            id="task0"
-          />
-          <label class="form-check-label" for="taskbox0">Take out trash</label>
-          <input
-            type="image"
-            src="imgs/trashBin.png"
-            class="trash-icon float-end"
-          />
-        </li>
+       
       </ul>
     </div>
     <div id="completed-header-div">
       <h1 class="fs-2">Completed Tasks</h1>
     </div>
     <div id="completed-tasks-div">
-        <ul id="completed-list" class="list-group">
-        </ul>
+      <ul id="completed-list" class="list-group"></ul>
     </div>
   </body>
   <script
